@@ -47,7 +47,6 @@ if digitCount == 1 || digitCount == 2 || digitCount == 3 {
 
 // 課題1-4
 
-// もうちょいまとめられないかな。
 switch digitCount {
 case 1:
     print("\(valueC)は\(digitCount)桁の値です。")
@@ -99,7 +98,7 @@ if number % 2 == 0 {
 
 
 
-// 1-8
+// 課題1-8
 class HogeA {
     func put() {
         print("クラスAインスタンスです。")
@@ -111,8 +110,7 @@ insA.put()    //　クラスの関数を呼び出し
 
 
 
-// 1-9
-// これでいいのか？
+// 課題1-9
 class HogeB {
     func putName(name: String) {
         print("私の名前は\(name)です。")
@@ -128,8 +126,7 @@ ken.putName(name: "ケン")
 
 
 
-// 1-10
-// 見直しする
+// 課題1-10
 class HogeC {
     // プロパティ
     var name: String = ""
@@ -156,8 +153,7 @@ miyata.putName()
 
 
 
-// 1-11
-// 色々試したらできた。なぜ動くのか不明。
+// 課題1-11
 enum User {
     // 値
     case name, age, bloodType
@@ -181,7 +177,7 @@ print(user.comment())
 
 
 
-// 1-12
+// 課題1-12
 
 for i in 1...50 {
     print(i)
@@ -190,7 +186,7 @@ for i in 1...50 {
 
 
 
-// 1-13
+// 課題1-13
 
 var valueE: [Int] = []
 
@@ -202,7 +198,7 @@ print(valueE)
 
 
 
-// 1-14
+// 課題1-14
 
 var valueF: [String] = ["リュウ", "ケン", "ナッシュ", "ガイル", "ベガ", "フェイロン"]
 valueF.remove(at: 2)   // 配列名.remove(at: インデックス番号) 指定したインデックス番号の要素を削除
@@ -211,7 +207,7 @@ print(valueF)
 
 
 
-// 1-15
+// 課題1-15
 
 let valueG: [Int] = [5, 4, 100, 49, 30, 1, 12, 0]
 
@@ -226,7 +222,7 @@ print(koujyun)
 
 
 
-// 1-16
+// 課題1-16
 
 print(valueG.count)
 
@@ -234,14 +230,14 @@ print(valueG.count)
 
 
 
-// 1-17
+// 課題1-17
 
 let valueH = ["a": 1, "b": 2, "c": 3]
 print(valueH["b"])    // 警告は無視しても構わない
 
 
 
-// 1-18
+// 課題1-18
 
 if let b = valueH["b"] {
     print(b)
@@ -250,8 +246,8 @@ if let b = valueH["b"] {
 
 
 
-// 1-19
-// 合ってんのかな
+// 課題1-19
+
 if let k = valueH["k"] {
 } else {
     print("値はnilです。")
@@ -260,7 +256,7 @@ if let k = valueH["k"] {
 
 
 
-// 1-20
+// 課題1-20
 let valueI: [Any?] = [1, "こんにちわ" , "こんばんわ", nil, 3, 100, "よろしく", nil, "お願いします。"]    // valueI を宣言
 
 for data in valueI {

@@ -226,13 +226,58 @@ print(koujyun)
 
 
 
-// ★1-16
+// 1-16
+
+print(valueG.count)
 
 
 
 
-// ★1-17
-// ★1-18
-// ★1-19
-// ★1-20
+
+// 1-17
+
+let valueH = ["a": 1, "b": 2, "c": 3]
+print(valueH["b"])    // 警告は無視しても構わない
+
+
+
+// 1-18
+
+if let b = valueH["b"] {
+    print(b)
+}
+
+
+
+
+// 1-19
+// 合ってんのかな
+if let k = valueH["k"] {
+} else {
+    print("値はnilです。")
+}
+
+
+
+
+// 1-20
+let valueI: [Any?] = [1, "こんにちわ" , "こんばんわ", nil, 3, 100, "よろしく", nil, "お願いします。"]    // valueI を宣言
+
+for data in valueI {
+    // print(data)
+    if let a = data {
+        // print(a)
+        // nil以外の場合
+        if a is Int {
+            print("数値\(a)です。")
+        } else if a is String {
+            print(a)
+        }
+    } else {
+        // nilの場合
+        print("値はnilです。")
+    }
+}
+    
+    
 
